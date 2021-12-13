@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: jamallangoy/CICD---Web-Page-Deploy-to-AWS-S3
+      - uses: arn:aws:s3:::ci-cd-webpage-deploy-from-github
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
